@@ -12,7 +12,19 @@ Non richiede tool esterni: usa solo PowerShell e l'API **Restart Manager** integ
 - Windows PowerShell 5.1 (preinstallato) o PowerShell 7+
 - Facoltativo: [`handle.exe`](https://learn.microsoft.com/sysinternals/downloads/handle) di Sysinternals per un controllo ancora più completo (vedi sotto)
 
-## Utilizzo
+## Avvio rapido
+
+Fai doppio clic su **`Avvia.bat`**: lo script parte subito, individua da solo la chiavetta collegata al PC (se ce n'è più di una, chiede quale) e al termine lascia la finestra aperta per leggere il risultato.
+
+Per proporre anche la chiusura dei processi trovati, trascina il `.bat` in un prompt e aggiungi `-Chiudi`, oppure crea un collegamento con destinazione:
+
+```
+Avvia.bat -Chiudi
+```
+
+Per vedere anche i processi di sistema, tasto destro su `Avvia.bat` > *Esegui come amministratore*.
+
+## Utilizzo da PowerShell
 
 Apri PowerShell nella cartella dello script ed esegui:
 
